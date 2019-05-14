@@ -122,13 +122,27 @@
 
 
 
+// // ======================================================================
+// // 6-ой урок
+
+
+// import React from 'react';
+
+// import AppNavigator from './src/6/routes';
+
+// export default function App() {
+//   return <AppNavigator />;
+// }
+
+
+
 // ======================================================================
-// 6-ой урок
+// 7-ой урок
 
 
 import React from 'react';
 
-import AppNavigator from './src/6/routes';
+import AppNavigator from './src/7/routes';
 
 export default function App() {
   return <AppNavigator />;

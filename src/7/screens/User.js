@@ -6,11 +6,11 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
-import ContactThumbnail from '../components/ContactThumbnail';
+import ContactThumbnail from '../../components/ContactThumbnail';
 
-import colors from '../utils/colors';
-import { fetchUserContact } from '../utils/api';
-import store from '../store';
+import colors from '../../utils/colors';
+import { fetchUserContact } from '../../utils/api';
+import store from '../../store';
 
 export default class User extends React.Component {
   static navigationOptions = {

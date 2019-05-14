@@ -7,11 +7,11 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
-import { fetchContacts } from '../utils/api';
+import { fetchContacts } from '../../utils/api';
 
-import ContactThumbnail from '../components/ContactThumbnail';
+import ContactThumbnail from '../../components/ContactThumbnail';
 
-import store from '../store';
+import store from '../../store';
 
 const keyExtractor = ({ phone }) => phone;
 
