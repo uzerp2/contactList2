@@ -1,6 +1,8 @@
 import React from 'react';
-import { StackNavigator, TabNavigator } from 'react-navigation';
-import { MaterialIcons } from '@expo/vector-icons';
+import { createStackNavigator, createAppContainer, createBottomTabNavigator } from 'react-navigation';
+// import { MaterialIcons } from '@expo/vector-icons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
 
 import Favorites from './screens/Favorites';
 import Contacts from './screens/Contacts';
@@ -14,7 +16,7 @@ const getTabBarIcon = icon => ({ tintColor }) => (
   <MaterialIcons name={icon} size={26} style={{ color: tintColor }} />
 );
 
-const ContactsScreens = StackNavigator(
+const ContactsScreens = createStackNavigator(
   {
     Contacts: {
       screen: Contacts,
@@ -31,7 +33,7 @@ const ContactsScreens = StackNavigator(
   },
 );
 
-const FavoritesScreens = StackNavigator(
+const FavoritesScreens = createStackNavigator(
   {
     Favorites: {
       screen: Favorites,
@@ -48,7 +50,7 @@ const FavoritesScreens = StackNavigator(
   },
 );
 
-const UserScreens = StackNavigator(
+const UserScreens = createStackNavigator(
   {
     User: {
       screen: User,
@@ -66,7 +68,8 @@ const UserScreens = StackNavigator(
   },
 );
 
-export default TabNavigator(
+
+const AppNavigator = createBottomTabNavigator(
   {
     Contacts: {
       screen: ContactsScreens,
@@ -93,3 +96,7 @@ export default TabNavigator(
     },
   },
 );
+
+
+
+export default createAppContainer(AppNavigator);
