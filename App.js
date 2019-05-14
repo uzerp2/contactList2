@@ -83,12 +83,38 @@
 
 
 
+// // ======================================================================
+// // 3-ой урок
+
+// import React from 'react';
+
+// import AppNavigator from './src/3/routes';
+
+// export default function App() {
+//   return <AppNavigator />;
+// }
+
+
+
+
+// // ======================================================================
+// // 4-ой урок
+
+// import React from 'react';
+
+// import AppNavigator from './src/4/routes';
+
+// export default function App() {
+//   return <AppNavigator />;
+// }
+
+
 // ======================================================================
-// 2-ой урок
+// 5-ой урок
 
 import React from 'react';
 
-import AppNavigator from './src/3/routes';
+import AppNavigator from './src/5/routes';
 
 export default function App() {
   return <AppNavigator />;
