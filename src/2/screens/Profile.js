@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import ContactThumbnail from '../components/ContactThumbnail';
-import DetailListItem from '../components/DetailListItem';
+import ContactThumbnail from '../../components/ContactThumbnail';
+import DetailListItem from '../../components/DetailListItem';
 
-import { fetchRandomContact } from '../utils/api';
-import colors from '../utils/colors';
+import { fetchRandomContact } from '../../utils/api';
+import colors from '../../utils/colors';
 
 export default class Profile extends React.Component {
   state = {

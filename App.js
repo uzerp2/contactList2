@@ -53,15 +53,29 @@
 
 
 
-// ======================================================================
-//
+// // ======================================================================
+// //
 
+
+// import React from 'react';
+
+// import Contacts from './src/1/screens/Contacts';
+// // import Contacts from './screens/Contacts';
+
+// export default function App() {
+//   return <Contacts />;
+// }
+
+
+
+
+// ======================================================================
+// 2-ой урок
 
 import React from 'react';
 
-import Contacts from './src/1/screens/Contacts';
-// import Contacts from './screens/Contacts';
+import AppNavigator from './src/2/routes';
 
 export default function App() {
-  return <Contacts />;
+  return <AppNavigator />;
 }

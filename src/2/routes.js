@@ -1,9 +1,10 @@
-import { StackNavigator } from 'react-navigation';
+import { createStackNavigator, createAppContainer } from 'react-navigation';
 
 import Contacts from './screens/Contacts';
 import Profile from './screens/Profile';
 
-export default StackNavigator({
+
+const AppNavigator = createStackNavigator({
   Contacts: {
     screen: Contacts,
   },
@@ -11,3 +12,5 @@ export default StackNavigator({
     screen: Profile,
   },
 });
+
+export default createAppContainer(AppNavigator);
