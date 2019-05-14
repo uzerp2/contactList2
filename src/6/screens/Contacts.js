@@ -6,12 +6,14 @@ import {
   FlatList,
   ActivityIndicator,
 } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+// import { MaterialIcons } from '@expo/vector-icons';
 
-import ContactListItem from '../components/ContactListItem';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import { fetchContacts } from '../utils/api';
-import colors from '../utils/colors';
+import ContactListItem from '../../components/ContactListItem';
+
+import { fetchContacts } from '../../utils/api';
+import colors from '../../utils/colors';
 
 const keyExtractor = ({ phone }) => phone;
 

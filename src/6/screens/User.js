@@ -5,12 +5,14 @@ import {
   View,
   ActivityIndicator,
 } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+// import { MaterialIcons } from '@expo/vector-icons';
 
-import ContactThumbnail from '../components/ContactThumbnail';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import colors from '../utils/colors';
-import { fetchUserContact } from '../utils/api';
+import ContactThumbnail from '../../components/ContactThumbnail';
+
+import colors from '../../utils/colors';
+import { fetchUserContact } from '../../utils/api';
 
 export default class User extends React.Component {
   static navigationOptions = ({ navigation: { navigate } }) => ({

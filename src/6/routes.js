@@ -1,6 +1,8 @@
 import React from 'react';
-import { StackNavigator, DrawerNavigator } from 'react-navigation';
-import { MaterialIcons } from '@expo/vector-icons';
+import { createStackNavigator, createAppContainer, createDrawerNavigator } from 'react-navigation';
+// import { MaterialIcons } from '@expo/vector-icons';
+
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import Favorites from './screens/Favorites';
 import Contacts from './screens/Contacts';
@@ -12,7 +14,7 @@ const getDrawerItemIcon = icon => ({ tintColor }) => (
   <MaterialIcons name={icon} size={22} style={{ color: tintColor }} />
 );
 
-const ContactsScreens = StackNavigator(
+const ContactsScreens = createStackNavigator(
   {
     Contacts: {
       screen: Contacts,
@@ -29,7 +31,7 @@ const ContactsScreens = StackNavigator(
   },
 );
 
-const FavoritesScreens = StackNavigator(
+const FavoritesScreens = createStackNavigator(
   {
     Favorites: {
       screen: Favorites,
@@ -46,7 +48,7 @@ const FavoritesScreens = StackNavigator(
   },
 );
 
-const UserScreens = StackNavigator(
+const UserScreens = createStackNavigator(
   {
     User: {
       screen: User,
@@ -64,7 +66,8 @@ const UserScreens = StackNavigator(
   },
 );
 
-export default DrawerNavigator(
+
+const AppNavigator = createDrawerNavigator(
   {
     Contacts: {
       screen: ContactsScreens,
@@ -80,3 +83,7 @@ export default DrawerNavigator(
     initialRouteName: 'Contacts',
   },
 );
+
+
+export default createAppContainer(AppNavigator);
+

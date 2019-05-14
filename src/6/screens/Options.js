@@ -1,9 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import { MaterialIcons } from '@expo/vector-icons';
+// import { MaterialIcons } from '@expo/vector-icons';
 
-import DetailListItem from '../components/DetailListItem';
-import colors from '../utils/colors';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+
+import DetailListItem from '../../components/DetailListItem';
+import colors from '../../utils/colors';
 
 export default class Options extends React.Component {
   static navigationOptions = ({ navigation: { goBack } }) => ({
